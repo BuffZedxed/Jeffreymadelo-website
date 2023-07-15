@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" type="x-icon" href="Nikey.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Nike Store</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .about-section {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    .about-section .btn {
+      font-size: 18px;
+      padding: 10px 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Nike Store</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="Home page.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="About us.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Jacketwebsite.html">Shop</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <div class="container">
+        <h2>About Us</h2>
+		<p>Nike Store is a leading global sports brand offering a wide range of athletic footwear, apparel, and
+          accessories. Our mission is to bring inspiration and innovation to every athlete in the world.</p>
+		<p>With a focus on quality, performance, and style, we strive to provide our customers with the best products
+          to enhance their athletic performance and lifestyle. From running shoes to basketball sneakers, from workout
+          gear to casual wear, Nike Store has you covered.</p>
+        <p>We champion continual progress for athletes and sport by taking action to help athletes reach their potential. Every job at NIKE, Inc. is grounded in a team-first mindset, cultivating a culture of innovation and a shared purpose to leave an enduring impact.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+	<p>&copy; 2023 Nikey Store. All rights reserved.</p>
+	<p class="p1"> Web Design Project By: Jeffrey Madelo.</p>
+    </div>
+  </footer>
+
+<script>
+        // Hide transition on navigation bar
+        var previousScroll = window.pageYOffset || document.documentElement.scrollTop;
+        var nav = document.querySelector('nav');
+        var navbarToggler = document.querySelector('.navbar-toggler');
+        var navMenu = document.querySelector('.navbar-collapse');
+
+        window.addEventListener('scroll', function() {
+            var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (currentScroll > previousScroll) {
+                nav.style.top = '-100px';
+                navMenu.classList.remove('show'); // Hide the navigation menu
+            } else {
+                nav.style.top = '0';
+            }
+            previousScroll = currentScroll;
+        });
+
+        navbarToggler.addEventListener('click', function() {
+            if (!navMenu.classList.contains('show') && window.pageYOffset > 0) {
+                nav.style.top = '-100px';
+            }
+        }); 
+    </script>
+	
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
